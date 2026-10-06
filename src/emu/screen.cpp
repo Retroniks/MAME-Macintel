@@ -18,7 +18,7 @@
 #include "rendutil.h"
 
 #include "nanosvg.h"
-#include "png.h"
+#include "../lib/util/png.h"
 
 #include <cstdio>
 #include <set>

@@ -333,7 +333,7 @@ void osd_common_t::register_options()
 
 	REGISTER_MODULE(m_mod_man, OUTPUT_NONE);
 	REGISTER_MODULE(m_mod_man, OUTPUT_CONSOLE);
-	REGISTER_MODULE(m_mod_man, OUTPUT_NETWORK);
+	// INTEL_MACOS_LOCAL: OUTPUT_NETWORK disabled - ASIO kqueue startup crash
 	REGISTER_MODULE(m_mod_man, OUTPUT_WIN32);
 
 

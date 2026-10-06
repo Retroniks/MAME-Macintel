@@ -15,7 +15,7 @@
 #include "screen.h"
 
 #include "aviio.h"
-#include "png.h"
+#include "../lib/util/png.h"
 
 
 namespace

@@ -272,7 +272,7 @@ struct websocket_connection_impl : public http_manager::websocket_connection {
 };
 
 http_manager::http_manager(bool active, short port, const char *root)
-  : m_active(active), m_io_context(std::make_shared<asio::io_context>()), m_root(root)
+  : m_active(active), m_io_context(active ? std::make_shared<asio::io_context>() : std::shared_ptr<asio::io_context>()), m_root(root)
 {
 	if (!active) return;
 
